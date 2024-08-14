@@ -1,0 +1,128 @@
+
+/* css  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.header{
+
+    background-image: url(./asset/vista-frontal-botella-perfume-flores-sobre-fondo-borroso-luz-espacio-libre_140725-145524.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    padding: 30px;
+
+}
+
+.titulo-principla{
+
+  
+    color: #021526;
+    font-weight: 900;
+
+}
+
+/* .logo {
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 50px;
+
+}
+
+
+.cards {
+    border: 3px solid ;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boton-mode{
+    background-color: #021526;
+    color: #e5e9e5;
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.8s ease;
+    
+}
+.boton-mode-oscuro{
+    background-color: #F1DEC6;
+    color: #021526;
+    transition: background-color 0.8s ease;
+
+
+
+}
+
+
+/* body por defecto para luego modificarlo con el modo oscuro */
+
+/* .body{
+    background-color:  #FFF1DB;
+    cursor: pointer;
+    transition: background-color 0.5s ease
+    
+} */
+
+
+
+
+
+
+/* titulo */
+
+/* boton para hacer cambio modo oscuro/claro */
+.modo-dark {
+    background-color: #021526;
+    color: #e5e9e5;
+    transition: background-color 0.5s ease;
+}

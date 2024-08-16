@@ -66,26 +66,11 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.boton-mode{
-    background-color: #021526;
-    color: #e5e9e5;
+/* ******************************************************* */
+/* mode - dark */
+.modo-inicial-boton{
+    background-color: #F1DEC6;
+    color: #021526;
     border: none;
     cursor: pointer;
     padding: 5px 15px;
@@ -94,34 +79,13 @@
     transition: background-color 0.8s ease;
     
 }
-.boton-mode-oscuro{
+.fondo-modo-false{
     background-color: #F1DEC6;
     color: #021526;
     transition: background-color 0.8s ease;
-
-
-
 }
 
-
-/* body por defecto para luego modificarlo con el modo oscuro */
-
-/* .body{
-    background-color:  #FFF1DB;
-    cursor: pointer;
-    transition: background-color 0.5s ease
-    
-} */
-
-
-
-
-
-
-/* titulo */
-
-/* boton para hacer cambio modo oscuro/claro */
-.modo-dark {
+.fondo-modo-true{
     background-color: #021526;
     color: #e5e9e5;
     transition: background-color 0.5s ease;

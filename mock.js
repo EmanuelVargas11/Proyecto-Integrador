@@ -4,7 +4,7 @@ const container = document.querySelector('.container')
 
 const buscador = document.querySelector('#buscar')
 
-const url = 'https://66b8d0893ce57325ac7834b0.mockapi.io/producto'
+const url = ''
 // selecionamos el boton para modo oscuro
 const boton = document.querySelector('#modo-oscuro')
 // texto para el boton

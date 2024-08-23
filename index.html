@@ -4,50 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consumo de apis</title>
+
+    <!-- libreria css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- custom -->
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="contac.html"> -->
-    
-    
-
 </head>
-<body class="body">
+<body>
     
-    <header class="header">
-        <section class="titulo-principla">
-            <h1 class="inicio" >La Fragancia</h1>
-            
-        </section>
+    <header class="contenedor">
         
-            <!-- boton para dar mode-dark a mi pagina -->
-        <button id="modo-oscuro" class="modo-inicial-boton" ></button>
-        <!-- <li>
-            <ul class="logo">
-
-
-            </ul>
-
-        </li> -->
-
-
-        <!-- <nav>
-            <li>
-                <ul><a href="./pages/contac.html" >Contact</a></ul>
-                <ul></ul>
-                <ul></ul>
-            </li>
-        </nav> -->
+        <h1 class="animate__animated animate__bounce titulo"  id="inicio">La Fragancia</h1>
         
         <form action="" class="form">
             <input type="text" name="buscar" placeholder="buscar perfume..." id="buscar">
-            <input type="submit" value="buscar">
-            
+            <input class="buscar" type="submit" value="buscar">
         </form>
-        
+        <nav class="navbar">
+            <!-- boton para dar mode-dark a mi pagina -->
+            <button id="modo-oscuro" class="modo-inicial-boton modobtn2" ></button>
+        </nav>
+          
     </header>
+    <h2>Lista De Productos</h2>
     
     <div class="container">
         <!-- aqui se pinta por medio de JS -->
     </div>
+
+
+
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, accusamus.</p>
+            <p class="Copyright">© Copyright</p>
+            <a href="#inicio" >🚀</a>
+        </div>
+    </footer>
 
 </body>
 <script src="mock.js" type="module"></script>

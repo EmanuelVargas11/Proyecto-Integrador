@@ -1,92 +1,185 @@
-
-/* css  */
+/* css  version mobile */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-.header{
-
-    background-image: url(./asset/vista-frontal-botella-perfume-flores-sobre-fondo-borroso-luz-espacio-libre_140725-145524.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    width: 100%;
-    height: auto;
+/* .header*/
+.contenedor {
+    margin: 0  auto; 
+    padding: 25px;
+    background-color: #F5E8C7;
+    border-radius: 0  0 5px 5px;
     display: flex;
-    position: relative;
-    padding: 30px;
-
+    justify-content: space-between;
+    align-items: center;
 }
-
-.titulo-principla{
-
-  
+.titulo{  
     color: #021526;
-    font-weight: 900;
-
+    font-size: 22px;
+    font-weight: 800;
+}
+.modobtn{
+    margin: 10px auto;
+    font-size: 14px;
+    font-size: 10px;
+    padding: 5px ;
+    border-radius: 5px;
+}
+.modo-inicial-boton{
+    background-color: #292533;
+    color: #d2d5e3;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out;
+    transition: padding 1s ease-in-out;
+    
 }
 
-/* .logo {
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.modo-inicial-boton:hover{
+    background-color: #4b445e;
+    border: #B9B4C7 solid;
+    border-radius: 5px;
+}
 
-
+.form #buscar{
+    margin: 0 0 0 15px ;
+    width: 50%;
+}
+/* main */
+h2{
+    font-size: 2.5rem;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
 
 .container{
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
     margin: 50px;
-
 }
 
-
 .cards {
-    border: 3px solid ;
+    background-color: #B9B4C7;
+    color: #18122B;
+    margin: 10px auto;
     border-radius: 10px;
     padding: 15px;
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    transition: .5s, ease-in .10s;
+        -webkit-transition: 2s, ease-in .10s;
+        -moz-transition: 2s, ease-in .10s;
+}
+.cards:hover{
+    transform: scale3d(0.8, 0.8, 0.3);
+        -webkit-transform: scale3d(0.8, 0.8, 0.8);
+        -moz-transform: scale3d(0.8, 0.8, 0.8);
 }
 
 .cards img{
+    margin: 10px auto;
     padding: 10px;
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 25px;
+}
+
+/* footer */
 
 
+.contenedor-footer{
+    margin: 0  auto; 
+    padding: 10px;
+    background-color: #F5E8C7;
+    border-radius: 0  0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parrafo{
+    color: #021526;
+    font-size: 1rem;
+    padding: 10px;
+    gap: 5px;
+}
+
+.Copyright{
+    color: #021526;
 }
 
 /* ******************************************************* */
 /* mode - dark */
-.modo-inicial-boton{
-    background-color: #F1DEC6;
-    color: #021526;
-    border: none;
-    cursor: pointer;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-weight: 700;
-    transition: background-color 0.8s ease;
-    
-}
 .fondo-modo-false{
-    background-color: #F1DEC6;
+    background-color: #FAF0E6;
     color: #021526;
     transition: background-color 0.8s ease;
 }
 
 .fondo-modo-true{
-    background-color: #021526;
-    color: #e5e9e5;
+    background-color: #352F44;
+    color: #FAF0E6;
     transition: background-color 0.5s ease;
+}
+
+/* media query version table */
+@media (min-width: 720px) {
+    .titulo{  
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .modo2{
+
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .form #buscar{
+        font-size: 1rem;
+        font-weight: 600;
+        width: 150px;
+        height: 50px;
+        border-radius: 20px;
+
+    }
+    .buscar {
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 20fr 20fr ;
+        grid-template-rows: 20fr 20fr;
+        gap: 35px;
+    }
+
+     .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        
+     } 
+
+   .cards img{
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+/* media query desktop */
+
+}
+@media (min-width: 1200px){
+
 }
